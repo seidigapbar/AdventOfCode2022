@@ -107,7 +107,7 @@ int handleFile(std::string fileName, bool firstPart){
     rootDir->calculateSize();
     int returnValue = rootDir->sizeOfDirectories;
     Directory::totalSpace -= rootDir->size;
-    std::cout<<"Min is: "<<rootDir->getMin()<<" "<<rootDir->size<<" "<<Directory::totalSpace<<std::endl;
+    std::cout<<"Min is: "<<rootDir->getMin()<<std::endl;
     rootDir->freeAll();
     return returnValue;
 }

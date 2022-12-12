@@ -1,5 +1,4 @@
 #include <iostream>
-#include <sstream>
 #include <fstream>
 #include <set>
 #include <queue>
@@ -47,7 +46,7 @@ int handleFile(std::string fileName, bool firstPart){
 
 int main(int argc, char *argv[])
 {
-    if(strcmp(argv[1], "1")){
+    if(strcmp(argv[1], "1") == 0){
         std::cout << handleFile("input.txt", true);
     }
     else{
