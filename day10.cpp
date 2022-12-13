@@ -69,6 +69,11 @@ int handleFile(std::string fileName, bool firstPart){
 }
 
 int main(int argc, char** argv){
-    std::cout << handleFile("input.txt", 0) << std::endl;
+    if(strcmp(argv[1], "1") == 0){
+        std::cout<<handleFile("input.txt", true)<<std::endl;
+    }
+    else{
+        std::cout<<handleFile("input.txt", false)<<std::endl;
+    }
     return 0;
 }
